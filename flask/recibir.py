@@ -13,7 +13,7 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     valores_json = str(msg.payload, 'utf-8')
     valores = json.loads(valores_json)
-    save_data(valores)
+    #save_data(valores)
     print(valores)
  
 
